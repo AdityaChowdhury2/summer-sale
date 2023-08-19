@@ -2,4 +2,4 @@
 
 b8a5-summer-sale-AdityaChowdhury2 created by GitHub Classroom
 
-[Live link](summer-sale-aditya.surge.sh)
+[Live link](https://summer-sale-aditya.surge.sh/)
