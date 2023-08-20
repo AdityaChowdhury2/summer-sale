@@ -59,7 +59,7 @@
                     <div class="flex justify-center items-center gap-4">
                         <p class="text-xl md:text-2xl">Use Promo Code</p>
                         <button
-                            class="btn btn-sm md:h-[2.5rem] bg-primary-color hover:bg-dark-color text-white">Sell200</button>
+                            class="btn btn-sm md:h-[2.5rem] bg-primary-color hover:bg-dark-color text-white rounded-md">Sell200</button>
                     </div>
                 </div>
                 <div class="max-w-sm">
@@ -76,7 +76,7 @@
                         <h2 class="text-xl md:text-3xl lg:text-5xl font-semibold my-4 lg:mb-8">Kitchenware
                         </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod1.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -93,7 +93,7 @@
                                     <p class="text-gray-400">39.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod2.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -110,7 +110,7 @@
                                     <p class="text-gray-400">39.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod3.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -134,7 +134,7 @@
                         <h2 class="text-xl md:text-3xl lg:text-5xl font-semibold my-4 lg:mb-8">Kitchenware
                         </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod4.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -148,10 +148,10 @@
                                         <input type="radio" name="rating-1" class="mask mask-star bg-amber-500" />
                                     </div>
                                     <h2 class="card-title">K.Accessories</h2>
-                                    <p class="text-gray-400">39.00 TK</p>
+                                    <p class="text-gray-400">100.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod5.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -168,7 +168,7 @@
                                     <p class="text-gray-400">39.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod6.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -191,7 +191,7 @@
                         <h2 class="text-xl md:text-3xl lg:text-5xl font-semibold my-4 lg:mb-8">Kitchenware
                         </h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod7.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -208,7 +208,7 @@
                                     <p class="text-gray-400">39.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod8.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -225,7 +225,7 @@
                                     <p class="text-gray-400">39.00 TK</p>
                                 </div>
                             </div>
-                            <div class="card bg-base-100 shadow-xl p-5">
+                            <div class="item card bg-base-100 shadow-xl p-5 hover:cursor-pointer">
                                 <figure class="p-5 xl:py-8 xl:px-16 bg-base-300 rounded-md">
                                     <img src="./images/prod9.png" alt="kitchen accessories" class="rounded-xl" />
                                 </figure>
@@ -254,22 +254,24 @@
                             <input class="input input-bordered join-item w-full" placeholder="Coupon Code" />
                             <button
                                 class="btn join-item rounded-r-md bg-primary-color capitalize text-white hover:bg-dark-color"
-                                disabled>Apply</button>
+                                disabled id="coupon-apply-btn">Apply</button>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-xl p-5">
-                        <div id="cart-item-list">
-
-                        </div>
+                        <ul id="cart-list-container">
+                        </ul>
                         <div class="py-6 border-y-2 mb-2">
-                            <p class="text-2xl font-medium">Total price: <span class="text-gray-400">00.00TK</span>
+                            <p class="text-2xl font-medium">Total price: <span id="total-price"
+                                    class="text-gray-400">00.00TK</span>
                             </p>
-                            <p class="text-2xl font-medium">Total price: <span class="text-gray-400">00.00TK</span>
+                            <p class="text-2xl font-medium">Discount: <span id="discount-amount"
+                                    class="text-gray-400">00.00TK</span>
                             </p>
-                            <p class="text-2xl font-medium">Total price: <span class="text-gray-400">00.00TK</span>
+                            <p class="text-2xl font-medium">Total <span id="total-after-discount"
+                                    class="text-gray-400">00.00TK</span>
                             </p>
                         </div>
-                        <button class="btn text-white bg-primary-color capitalize hover:bg-dark-color"
+                        <button id="purchase-btn" class="btn text-white bg-primary-color capitalize hover:bg-dark-color"
                             onclick="my_modal_1.showModal()" disabled>Make
                             Purchase</button>
                         <!-- Open the modal using ID.showModal() method -->
@@ -279,10 +281,11 @@
                                     <img src="./images/congo.png" class="" alt="">
                                 </div>
                                 <h2 class="font-bold text-xl md:text-3xl lg:text-5xl">Congratulations</h2>
-                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <p class="py-4">You Purchase the Products</p>
                                 <div class="modal-action justify-center">
                                     <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn text-white bg-primary-color capitalize hover:bg-dark-color">Go
+                                    <button onclick="clearCart()"
+                                        class="btn text-white bg-primary-color capitalize hover:bg-dark-color">Go
                                         Home</button>
                                 </div>
                             </form>
