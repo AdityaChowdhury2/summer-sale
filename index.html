@@ -44,7 +44,7 @@
 <body class="font-work-sans">
     <header>
         <!-- Banner Section -->
-        <div class="hero bg-[#F9F6E2] px-5">
+        <div class="hero bg-[#F9F6E2]">
             <div class="hero-content flex-col lg:flex-row py-20">
                 <div class="text-center">
                     <h3 class="font-medium text-lg md:text-xl lg:text-3xl uppercase">--Sale Fever--</h3>
@@ -253,7 +253,8 @@
                         <div class="join">
                             <input class="input input-bordered join-item w-full" placeholder="Coupon Code" />
                             <button
-                                class="btn join-item rounded-r-md bg-primary-color capitalize text-white">Apply</button>
+                                class="btn join-item rounded-r-md bg-primary-color capitalize text-white hover:bg-dark-color"
+                                disabled>Apply</button>
                         </div>
                     </div>
                     <div class="card bg-base-100 shadow-xl p-5">
@@ -268,7 +269,24 @@
                             <p class="text-2xl font-medium">Total price: <span class="text-gray-400">00.00TK</span>
                             </p>
                         </div>
-                        <button class="btn text-white bg-primary-color capitalize" disabled>Make Purchase</button>
+                        <button class="btn text-white bg-primary-color capitalize hover:bg-dark-color"
+                            onclick="my_modal_1.showModal()" disabled>Make
+                            Purchase</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog" class="modal-box text-center p-10 md:p-12 lg:p-24 lg:max-w-xl">
+                                <div class="flex justify-center">
+                                    <img src="./images/congo.png" class="" alt="">
+                                </div>
+                                <h2 class="font-bold text-xl md:text-3xl lg:text-5xl">Congratulations</h2>
+                                <p class="py-4">Press ESC key or click the button below to close</p>
+                                <div class="modal-action justify-center">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn text-white bg-primary-color capitalize hover:bg-dark-color">Go
+                                        Home</button>
+                                </div>
+                            </form>
+                        </dialog>
                         <button></button>
 
                     </div>

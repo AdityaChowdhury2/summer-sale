@@ -1,1 +1,1 @@
-console.log("Script connection established");
+// console.log("Script connection established");
